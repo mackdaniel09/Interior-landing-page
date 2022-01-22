@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url("/images/header.jpg");
+  background-position: center;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.btn-light {
+  background-color: #ffff9c;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.btn-light:hover {
+  background-color: #f6f2ca;
+  transition: all 0.3s ease-in-out;
+}
+.menu-btn {
+  display: none;
+}
+main {
+  background-color: #222;
+  color: #fff;
+}
+.container {
+  padding: 5rem 3rem;
+}
+.text-title {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.text-title h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.text-header {
+  text-transform: uppercase;
+}
+nav,
+header .info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 3rem;
+  background-color: transparent;
+}
+nav .logo {
+  font-size: 2rem;
+  color: yellow;
+  font-weight: 600;
+}
+nav .navbar {
+  display: flex;
+  align-items: center;
+}
+nav .navbar a {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+nav .buttons {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+nav .buttons a {
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.search-bar {
+  position: absolute;
+  height: 0;
+  width: 300px;
+  display: none;
+  /* top: -110%; */
+  right: 60%;
+  transition: all 0.3s ease-in-out;
+}
+.search-bar.active {
+  display: block;
+  height: 50px;
+  top: 110%;
+}
+.search-bar input {
+  /* padding: 0.5rem; */
+  width: 300px;
+  border-radius: 5px;
+  outline: none;
+  height: 100%;
+}
+.header-content {
+  height: 80%;
+  display: flex;
+}
+.header-title {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+.header-title h1 {
+  font-size: 3rem;
+}
+.header-title p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+header .info {
+  display: flex;
+  color: #fff;
+}
+header .info .left,
+header .info .right {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+header .info .left button {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  cursor: pointer;
+}
+header .info .right div {
+  margin: 0 10px;
+}
+header .info .right div span {
+  height: 10px;
+  width: 100%;
+  background-color: #fff;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 60px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+.modal.active {
+  display: block;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  border: 1px solid #888;
+  width: 40%;
+}
+/* Bordered form */
+.modal-content form {
+  border: 3px solid #f1f1f1;
+}
+/* Full-width inputs */
+.modal-content input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* Set a style for all buttons */
+.modal-content button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+.modal-content button:hover {
+  opacity: 0.8;
+}
+/* Extra style for the cancel button (red) */
+.modal-content .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+/* Center the avatar image inside this container */
+.modal-content .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+/* Avatar image */
+.modal-content img.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+/* Add padding to containers */
+.modal-content .container {
+  padding: 16px;
+}
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.services .carousel .card-one {
+  background: url("/images/card-one.png");
+}
+.services .carousel .card-two {
+  background: url("/images/card-two.png");
+}
+.services .carousel .card-three {
+  background: url("/images/card-three.png");
+}
+.services .carousel .card-four {
+  background: url("/images/card-four.png");
+}
+.services .carousel .card-five {
+  background: url("/images/card-five.png");
+}
+.services .carousel .card-six {
+  background: url("/images/card-six.png");
+}
+.services .carousel .card-seven {
+  background: url("/images/card-seven.png");
+}
+.services .carousel .card-eight {
+  background: url("/images/card-eight.png");
+}
+.carousel .card {
+  margin-top: 40px;
+  height: 500px;
+  width: 400px;
+  position: relative;
+}
+.carousel .card > div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+}
+.carousel .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid yellow !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: yellow !important;
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+}
+.flex-box > div {
+  flex: 1;
+  margin: 0 10px;
+}
+.flex-box div img {
+  width: 600px;
+}
+.flex-box > div:nth-child(2) p {
+  margin: 20px 0;
+}
+.project .carousel .card-one {
+  background: url("/images/cards-one.png");
+}
+.project .carousel .card-two {
+  background: url("/images/cards-two.png");
+}
+.project .carousel .card-three {
+  background: url("/images/cards-three.png");
+}
+.project .carousel .card-four {
+  background: url("/images/cards-four.png");
+}
+.project .carousel .card-five {
+  background: url("/images/cards-five.png");
+}
+.teams .carousel .card-one {
+  background: url("/images/person-one.png");
+}
+.teams .carousel .card-two {
+  background: url("/images/person-two.png");
+}
+.teams .carousel .card-three {
+  background: url("/images/person-three.png");
+}
+.teams .carousel .card-four {
+  background: url("/images/person-four.png");
+}
+.teams .carousel .card-five {
+  background: url("/images/person-five.png");
+}
+footer .flex-box {
+  margin-top: 20px;
+  text-align: center;
+}
+@media (max-width: 1100px) {
+  nav,
+  header .info {
+    padding: 0.6rem 2rem;
+  }
+}
+@media (max-width: 991px) {
+  nav,
+  header .info {
+    padding: 0.6rem 1rem;
+  }
+  .flex-box div img {
+    width: 400px;
+  }
+}
+@media (max-width: 879px) {
+  .menu-btn {
+    display: block;
+  }
+  nav {
+    position: relative;
+  }
+  nav .navbar {
+    position: absolute;
+    top: 100%;
+    right: 15%;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    border: 1px solid #fff;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  nav .navbar.active {
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  nav .navbar a {
+    padding: 2rem 0;
+  }
+  .flex-box {
+    flex-direction: column;
+  }
+  .flex-box div {
+    margin: 20px 0;
+  }
+  .flex-box div img {
+    width: 100%;
+  }
+}
+@media (max-width: 749px) {
+  nav .navbar {
+    width: 200px;
+  }
+  .header-content {
+    height: 70%;
+  }
+  header .info {
+    flex-direction: column;
+    text-align: center;
+
+    width: 100%;
+  }
+  header .info .left,
+  header .info .right {
+    justify-content: center;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 653px) {
+  .text-title {
+    width: 100%;
+  }
+}

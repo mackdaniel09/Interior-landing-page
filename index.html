@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <title>Interior - Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="#" class="logo">EINTO</a>
+        </div>
+        <div class="navbar">
+          <a href="#">home</a>
+          <a href="#">our services</a>
+          <a href="#">our team</a>
+          <a href="#">our project</a>
+          <a href="#">blog</a>
+          <a href="#">about</a>
+        </div>
+        <div class="buttons">
+          <a href="#" class="menu-btn"><i class="fa fa-bars"></i></a>
+          <a href="#" class="search-icon"><i class="fa fa-search"></i></a>
+          <div class="search-bar">
+            <input type="text" placeholder="Search Here..." />
+          </div>
+          <a href="#" class="open-modal"><i class="fa fa-user"></i></a>
+        </div>
+      </nav>
+      <div class="header-content">
+        <div class="header-title">
+          <h1>Interior design and decor for your home</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
+            maiores. Corporis natus doloribus dolorum nobis voluptates error eum
+            dolorem distinctio?
+          </p>
+          <a href="#" class="btn btn-light">contact us</a>
+        </div>
+      </div>
+      <div class="info">
+        <div class="left">
+          <button>
+            <span><i class="fa fa-play"></i></span>
+          </button>
+          SEE OUR STORY
+        </div>
+        <div class="right">
+          <div>
+            <div>YEARS OF EXPERIENCE</div>
+            <span></span>10
+          </div>
+          <div>
+            <div>COMPLETE PROJECT</div>
+            <span></span>1250
+          </div>
+        </div>
+      </div>
+      <!-- The Modal -->
+      <div id="id01" class="modal">
+        <span
+          onclick="document.getElementById('id01').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >&times;</span
+        >
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <img src="/images/avatar.png" alt="Avatar" class="avatar" />
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="uname"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Remember me
+            </label>
+          </div>
+
+          <div class="container" style="background-color: #f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </header>
+    <main>
+      <section class="services" id="services">
+        <div class="container">
+          <div class="text-title">
+            <h2>our services</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis
+              aliquid mollitia iste, quaerat quo est! Soluta illum impedit
+              magni?
+            </p>
+          </div>
+          <div class="carousel owl-carousel">
+            <div class="card card-one">
+              <div>Interior Design</div>
+            </div>
+            <div class="card card-two">
+              <div>Architecture Design</div>
+            </div>
+            <div class="card card-three">
+              <div>Furniture Design</div>
+            </div>
+            <div class="card card-four">
+              <div>Landscape Design</div>
+            </div>
+            <div class="card card-five">
+              <div>Inudstrial Design</div>
+            </div>
+            <div class="card card-six">
+              <div>Fashion Design</div>
+            </div>
+            <div class="card card-seven">
+              <div>Modern Design</div>
+            </div>
+            <div class="card card-eight">
+              <div>Contemporary Design</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="flex-box">
+            <div>
+              <img src="/images/about.png" alt="" />
+            </div>
+            <div>
+              <div class="text-header">
+                <h2>About us</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  iusto necessitatibus cumque animi impedit placeat laborum
+                  cupiditate? Ad doloremque delectus, nobis cum perspiciatis
+                  nesciunt quibusdam, officiis voluptatum quam quidem unde.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perspiciatis earum harum, nemo ea deleniti laborum facere
+                  nulla. Veritatis consectetur expedita laboriosam repellendus
+                  consequatur tempora adipisci.
+                </p>
+                <a href="#" class="btn btn-light">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project" id="project">
+        <div class="container">
+          <div class="text-title">
+            <h2>our project</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis
+              aliquid mollitia iste, quaerat quo est! Soluta illum impedit
+              magni?
+            </p>
+          </div>
+          <div class="carousel owl-carousel">
+            <div class="card card-one">
+              <div>
+                <h2>Apartment in Stockholm</h2>
+                <small>Furniture, Living</small>
+              </div>
+            </div>
+            <div class="card card-two">
+             <div>
+                <h2>Apartment in Stockholm</h2>
+                <small>Furniture, Living</small>
+              </div>
+            </div>
+            <div class="card card-three">
+              <div>
+                <h2>Apartment in Stockholm</h2>
+                <small>Furniture, Living</small>
+              </div>
+            </div>
+            <div class="card card-four">
+            <div>
+                <h2>Apartment in Stockholm</h2>
+                <small>Furniture, Living</small>
+              </div>
+            </div>
+            <div class="card card-five">
+              <div>
+                <h2>Apartment in Stockholm</h2>
+                <small>Furniture, Living</small>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="teams" id="teams">
+        <div class="container">
+           <div class="text-title">
+            <h2>our teams</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis
+              aliquid mollitia iste, quaerat quo est! Soluta illum impedit
+              magni?
+            </p>
+          </div>
+              <div class="carousel owl-carousel">
+            <div class="card card-one">
+              <div>
+                <h2>Jon Deo</h2>
+                <small>Software Engineer</small>
+              </div>
+            </div>
+            <div class="card card-two">
+             <div>
+                <h2>Jon Deo</h2>
+                <small>Front-end Engineer</small>
+              </div>
+            </div>
+            <div class="card card-three">
+              <div>
+                 <h2>Jon Deo</h2>
+                <small>Back-end Engineer</small>
+              </div>
+            </div>
+            <div class="card card-four">
+            <div>
+                <h2>Jon Deo</h2>
+                <small>Full-stack Engineer</small>
+              </div>
+            </div>
+            <div class="card card-five">
+              <div>
+                <h2>Apartment in Stockholm</h2>
+                <small>Furniture, Living</small>
+              </div>
+            </div>
+            </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+            <div class="text-title">
+            <h2>our trusted partners</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis
+              aliquid mollitia iste, quaerat quo est! Soluta illum impedit
+              magni?
+            </p>
+          </div>
+          <div class="flex-box">
+            <div>CONVERSE</div>
+            <div>UNILEVER</div>
+            <div>NIKE</div>
+            <div>TOYOTA</div>
+            <div>BOSCH</div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
